@@ -6,7 +6,7 @@ body {
 }
 
 .bg-img-container {
-    background: url("/images/contact-bg-blue.svg");
+    background: url("../images/contact-bg-blue.svg");
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body {
 
 .content {
     position: absolute;
-    top: 52%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 700px;

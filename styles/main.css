@@ -81,7 +81,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.4);
     margin-top: 30px;
     padding: 0.6rem 1.8rem;
-    background: url(/images/button-bg.svg);
+    background: url("../images/button-bg.svg");
     background-position: 260%;
     background-repeat: no-repeat;
     transition: 0.4s ease-in-out;
