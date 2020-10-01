@@ -1,0 +1,257 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #aaa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-img-container {
+    background: url("/images/contact-bg-blue.svg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav {
+    font-size: 1.4rem;
+}
+
+.nav-item {
+    margin-right: 40px;
+    font-size: 1.2rem;
+}
+
+.brand-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.content {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 700px;
+    width: 1000px;
+}
+
+.contact-header {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.contact-form {
+    background: rgba(255, 255, 255, 0.88);
+    width: 500px;
+    padding: 30px 40px;
+    margin: 30px auto;
+    border-radius: 4px;
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.form-item {
+    width: 100%;
+}
+
+.input, textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    /* position: relative; */
+    border: none;
+    border-bottom: 2px solid rgba(206, 206, 206, 0.6);
+}
+
+.message-box {
+    resize: none;
+    margin-top: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    height: 140px;
+}
+
+.input-span {
+    position: absolute;
+    left: 0; 
+    font-size: 1.1rem;  
+    padding: 5px 0;
+    color: rgba(78, 78, 78, 0.6);
+    pointer-events: none;
+    margin-left: 40px;
+    margin-top: 5px;
+    
+}
+
+.msg-span {
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.input:focus,
+.input:valid {
+    border-bottom: 2px solid #14a1ff;
+    transition: 0.5s;
+}
+
+.input:focus ~ span,
+.input:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+    color: #14a1ff;
+    transition: 0.5s;
+} 
+
+#email-input:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+    color: #14a1ff;
+    transition: 0.5s;
+}
+
+.message-box:focus ~ span,
+.message-box:valid ~ span {
+    transform: translate(-20px, -32px);
+    font-size: 0.8rem;
+    color: #14a1ff;
+    transition: 0.5s;
+}
+
+.message-box:focus,
+.message-box:valid {
+    border-bottom: 2px solid #14a1ff;
+    transition: 0.5s;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit-button {
+    position: relative;
+    cursor: pointer;
+    background: #14a1ff;
+    color: #fff;
+    border: none;
+    padding: 12px 36px;
+    width: auto;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.member-cta {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.2rem;
+}
+
+.member-link {
+    text-align: center;
+    color:  #48f3ff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.member-link:hover {
+    color: #48f3ff;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 1540px){
+    .contact-header {
+        font-size: 6rem;
+    }
+    .content {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .brand-text {
+        position: absolute;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contact-header {
+        font-size: 4.8rem;
+    }   
+    .content {
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .brand-text {
+        font-size: 1.4rem;
+        margin-left: 60px;
+    }
+    .logo {
+        width: 3rem;
+    }
+    .contact-header {
+        font-size: 3rem;
+    }
+    .content {
+        width: 90vw;
+        top: 60%;
+    }
+    .contact-form {
+        width: 86vw;
+    }
+    .member-cta {
+        font-size: 1rem;
+    }
+    .member-link {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .brand-text {
+        font-size: 1.4rem;
+        margin-left: 60px;
+    }
+    .logo {
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .content {
+        margin-top: -0px;
+    }
+    body {
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 100px){
+    .brand-text {
+        font-size: 1.3rem;
+        margin-left: 46px;
+    }
+    .logo {
+        width: 2.6rem;
+    }
+}

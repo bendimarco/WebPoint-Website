@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#nav {
+    font-size: 1.4rem;
+}
+
+.nav-item {
+    margin-right: 40px;
+    font-size: 1.2rem;
+}
+
+.brand-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.home-container {
+    width: 70vw;
+    /* background: #33ccff; */
+    margin: auto;
+    max-width: 1600px;
+    transform: translateY(-50%);
+    margin-top: 40vh;
+}
+
+.home-img-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-img{
+    width: 40rem;
+    float: right;
+    /* background: #3f14ff; */
+}
+
+.home-text {
+   color: #fff;
+   /* background: #3f1400; */
+   height: 450px;
+}
+
+.home-text-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+.home-heading {
+    font-size: 4.6rem;
+    font-weight: 600;
+}
+
+.home-subheading {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.learn-button {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    margin-top: 30px;
+    padding: 0.6rem 1.8rem;
+    background: url(/images/button-bg.svg);
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+}
+
+.learn-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 2060px){
+    .home-heading {
+        font-size: 4rem;
+    }
+    .home-subheading {
+        font-size: 1.2rem;
+    }
+    .home-container {
+        width: 74vw;
+    }
+}
+
+@media only screen and (max-width: 1540px){
+    .home-container {
+        width: 86vw;
+    }
+    .home-heading {
+        font-size: 3.6rem;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img {
+        width: 38rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .row {
+        flex-direction: column-reverse;
+    }
+    .home-img{
+        width: 32rem;
+    }
+    .home-img-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .home-heading {
+        margin-top: 200px;
+    }
+    .home-subheading {
+        margin-top: 20px;
+    }
+    .learn-button {
+        margin-top: 60px;
+    }
+    .home-text-center {
+        text-align: center;
+        width: 50vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .home-container {
+        margin-top: 220px;
+    }
+    .brand-text {
+        position: absolute;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .home-heading {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .home-heading {
+        font-size: 2.6rem;
+        margin-top: 160px;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 28rem;
+    }
+    .home-container {
+        margin-top: 260px;
+    }
+    .home-text-center {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home-heading {
+        font-size: 2.6rem;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 20rem;
+    }
+    .home-container {
+        position: absolute;
+        left: 50%;
+        margin-top: 0px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .home-text-center {
+        width: 80vw;
+    }
+    .brand-text {
+        font-size: 1.4rem;
+        margin-left: 60px;
+    }
+    .logo {
+        width: 3rem;
+    }
+    .home-heading {
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+    .home-subheading {
+        font-size: 0.9rem;
+    }
+    .home-text-center {
+        margin-top: 40px;
+    }
+    .learn-button {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home-heading {
+        font-size: 2.6rem;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 16rem;
+    }
+    .home-heading {
+        font-size: 1.9rem;
+    }
+    .home-subheading {
+        font-size: 0.9rem;
+    }
+    .home-text-center {
+        margin-top: 40px;
+        margin-top: 0px;
+    }
+    .learn-button {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 290px){
+    .home-heading {
+        font-size: 2.6rem;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 16rem;
+    }
+    .home-container {
+        position: absolute;
+        left: 50%;
+        margin-top: 0px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .home-text-center {
+        width: 80vw;
+    }
+    .brand-text {
+        font-size: 1.3rem;
+        margin-left: 46px;
+    }
+    .logo {
+        width: 2.6rem;
+    }
+    .home-heading {
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+    .home-subheading {
+        font-size: 0.7rem;
+        margin-top: 18px;
+    }
+    .home-text-center {
+        margin-top: 0px;
+    }
+    .learn-button {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+}
+

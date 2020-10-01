@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%);;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.brand-text {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.main-container {
+    height: 66vh;
+}
+
+.main-text-container {
+    width: 40vw;
+}
+
+.main-img-container {
+    width: 40vw;
+}
+
+.why-container {
+    height: 600px;
+    background: #fff;
+}
+
+.about-img {
+    width: 20rem;
+}

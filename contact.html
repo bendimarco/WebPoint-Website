@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WebPoint</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="WebPoint, Web,
+        Point, development, UI, UX, design, students, 
+        high school, school, students, free, voulenteer,
+        Howard County, Ellicott City, Maryland">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index,follow">
+    <link rel="icon" href="images/WebPoint-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <div class="bg-img-container">
+        <nav id="nav" class= "navbar navbar-expand-xl navbar-dark">
+            <a id="nav-brand" class = "navbar-brand" href="index.html"><img class = "logo" src="images/WebPoint-Logo-Transparent.png"
+                alt="WebPoint Logo"></a>
+                <p class="brand-text">WebPoint</p>
+            <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about.html">About Us</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="portfolio.html">Portfolio</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="contact.html">Contact Us</a> </li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="content">
+            <h1 class="contact-header">Get in Touch.</h1>
+            <div class="contact-form">
+                <!-- add to form:  action="mailto:someone@example.com" method="post" enctype="text/plain" -->
+                <div class="input-field">
+                    <input autocomplete="name" class="input" type="text" id="name-input" required>
+                    <span class="input-span">Full Name</span>
+                </div>
+                <div class="input-field">
+                    <input autocomplete="email" class="input" type="text" id="email-input" required>
+                    <span class="input-span">Email Adress</span>
+                </div>
+                <div class="input-field">
+                    <textarea class="message-box" id="" cols="30" rows="10" required></textarea>
+                    <span class="input-span msg-span">Message</span>
+                </input>
+                </div>
+                <div class="input-field submit">
+                    <input onclick="submit()" class="submit-button" type="submit" value="Send Message" required>
+                </div>
+            </div>
+            <h3 class="member-cta">Interested in becoming a member? &nbsp;<a target="_blank" class="member-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfpEhTwU_GgRbQ8mLXI35mcLPkKMDVboVUUGYSnli0a_19ypg/viewform">Click Here</a></h3>
+        </div>
+    <script src="scripts/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
