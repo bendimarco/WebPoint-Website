@@ -13,15 +13,13 @@ body {
     font-size: 1.4rem;
 }
 
+#nav-brand {
+    font-size: 2rem;
+}
+
 .nav-item {
     margin-right: 40px;
     font-size: 1.2rem;
-}
-
-.brand-text {
-    margin-top: 20px;
-    color: #fff;
-    font-size: 2rem;
 }
 
 .logo {
@@ -69,7 +67,7 @@ body {
 .home-subheading {
     margin-top: 30px;
     font-size: 1.6rem;
-    opacity: 0.6;
+    opacity: 0.7;
     font-weight: 400;
 }
 
@@ -153,8 +151,9 @@ body {
         margin-top: 220px;
     }
     .brand-text {
-        position: absolute;
-        margin-left: 80px;
+        position: relative;
+        margin-left: 0px;
+        text-align: left;
     }
 }
 
@@ -192,19 +191,11 @@ body {
     .home-img{
         width: 20rem;
     }
-    .home-container {
-        position: absolute;
-        left: 50%;
-        margin-top: 0px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
     .home-text-center {
         width: 80vw;
     }
-    .brand-text {
-        font-size: 1.4rem;
-        margin-left: 60px;
+    .home-container{
+        margin-top: 40vh;
     }
     .logo {
         width: 3rem;

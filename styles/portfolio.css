@@ -1,8 +1,8 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: #aaa;
     font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
 
 #nav {
@@ -11,14 +11,358 @@ body {
 
 .nav-item {
     margin-right: 40px;
+    font-size: 1.2rem;
 }
 
-.brand-text {
-    margin-top: 20px;
-    color: #fff;
+#nav-brand {
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .logo {
     width: 4rem;
+}
+
+.carousel {
+    height: 80vh;
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70, 70, 70, 0.25);
+  }
+  
+  .carousel-indicators .active {
+    background-color: #444;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    /* background-color: #ccc; */
+    width: 8vw;
+    filter: invert(100%);
+    
+}
+
+.slide-text-sect {
+    transform: translateY(28vh);
+}
+
+.slide-header {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-left: 40px;
+}
+.slide-desc {
+    margin-left: 40px;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.slide-img-sect {
+    margin-top: 12vh;
+    float: right;
+    /* background: #f00; */
+}
+
+.slide-img {
+    width: 22rem;
+    float: right;
+    margin-right: 8rem;
+}
+
+.igyb-button, .clsc-button, .sisc-button, .contact-button {
+    cursor: pointer;
+    color: rgba(51, 51, 51, 0.6);
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    padding: 0.6rem 1.8rem;
+}
+
+.igyb-button {
+    margin-left: 40px;
+    background: url("../images/igyb-button-bg.svg");
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+}
+
+.clsc-button {
+    margin-left: 40px;
+    background: url("../images/clsc-button-bg.svg");
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+}
+
+.sisc-button {
+    margin-left: 40px;
+    background: url("../images/sisc-button-bg.svg");
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+}
+
+.contact-button {
+    background: url("../images/contact-button-bg.svg");
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.igyb-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid #ffbc03;
+}
+
+.clsc-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid #AE0616;
+}
+
+.sisc-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid #2951D9;
+}
+
+.contact-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid #43a4ff;
+}
+
+.contact-sect {
+    text-align: center;
+}
+
+.contact-content {
+    margin-top: 34vh;
+}
+
+.contact-header {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
+@media only screen and (min-width: 1200px){
+    @media only screen and (max-height: 900px) {
+        .igyb-img-sect {
+            margin-top: 8vh;
+            float: right;
+        }
+        .Slide-Container {
+            margin-top: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 2060px){
+}
+
+@media only screen and (max-width: 1540px){
+}
+
+@media only screen and (max-width: 1200px){
+    .slide-header {
+        margin-left: 60px;
+    }
+    .slide-desc {
+        margin-left: 60px;
+    }
+    .igyb-button, .clsc-button, .sisc-button, .contact-button {
+        margin-left: 60px;
+    }
+    .slide-img {
+        width: 22rem;
+        float: right;
+        margin-right: 2rem;
+    }
+    .carousel {
+        height: 88vh;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    body {
+        /* background: #f00; */
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .slide-text-sect {
+        transform: translateY(0vh);
+        text-align: center;
+        margin: auto;
+        margin-top: 7vh;
+        width: 70vw;
+    }
+    .slide-header {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-left: 0px;
+    }
+    .slide-desc {
+        margin-left: 0px;
+        font-size: 0.9rem;
+    }
+    .slide-img-sect {
+        margin-top: 0vh;
+        float: none;
+        /* background: #f00; */
+        text-align: center;
+    }
+    .slide-img {
+        width: 18rem;
+        float: none;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .igyb-button, .clsc-button, .sisc-button, .contact-button {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 450px){
+    .logo {
+        width: 3rem;
+    }
+    .slide-header {
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin-left: 0px;
+    }
+    .slide-desc {
+        margin-left: 0px;
+        font-size: 0.8rem;
+    }
+    .slide-img {
+        width: 14rem;
+        float: none;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .slide-text-sect {
+        margin-top: 40px;
+        width: 80vw;
+    }
+    .contact-header {
+        font-size: 2rem;
+    }
+    .igyb-button, .clsc-button, .sisc-button, .contact-button {
+        cursor: pointer;
+        color: rgba(51, 51, 51, 0.6);
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        border: 2px solid rgba(0, 0, 0, 0.4);
+        margin-top: 20px;
+        padding: 0.4rem 1.2rem;
+    }
+    @media only screen and (max-height: 740px){
+        .slide-header {
+            font-size: 1.4rem;
+        }
+        .slide-text-sect {
+            margin-top: 30px;
+        }
+        .slide-desc {
+            font-size: 0.8rem;
+        }
+        .slide-img {
+            width: 12rem;
+            margin-top: 6vh;
+        }
+        .igyb-button, .clsc-button, .sisc-button, .contact-button {
+            margin-top: 10px;
+        }
+    }
+    @media only screen and (max-height: 700px){
+        .slide-img {
+            width: 10rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .slide-img {
+        width: 14rem;
+        float: none;
+        margin: 0;
+        margin-top: 2vh;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #nav-brand {
+        font-size: 1rem;
+    }
+    .slide-header {
+        font-size: 1rem;
+    }
+    .slide-text-sect {
+        margin-top: 30px;
+    }
+    .slide-desc {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 290px){
+    .home-heading {
+        font-size: 2.6rem;
+    }
+    .home-subheading {
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 16rem;
+    }
+    .home-container {
+        position: absolute;
+        left: 50%;
+        margin-top: 0px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .home-text-center {
+        width: 80vw;
+    }
+    .brand-text {
+        font-size: 1.3rem;
+        margin-left: 46px;
+    }
+    .logo {
+        width: 2.6rem;
+    }
+    .home-heading {
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+    .home-subheading {
+        font-size: 0.7rem;
+        margin-top: 18px;
+    }
+    .home-text-center {
+        margin-top: 0px;
+    }
+    .learn-button {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
 }

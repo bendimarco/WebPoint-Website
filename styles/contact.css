@@ -17,15 +17,13 @@ body {
     font-size: 1.4rem;
 }
 
+#nav-brand {
+    font-size: 2rem;
+}
+
 .nav-item {
     margin-right: 40px;
     font-size: 1.2rem;
-}
-
-.brand-text {
-    margin-top: 20px;
-    color: #fff;
-    font-size: 2rem;
 }
 
 .logo {
@@ -33,16 +31,12 @@ body {
 }
 
 .content {
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 700px;
-    width: 1000px;
+    position: relative;
+    margin-top: 4vh;
 }
 
 .contact-header {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -180,32 +174,15 @@ body {
     .contact-header {
         font-size: 6rem;
     }
-    .content {
-        width: 700px;
-    }
-}
-
-@media only screen and (max-width: 1200px){
-    .brand-text {
-        position: absolute;
-        margin-left: 80px;
-    }
 }
 
 @media only screen and (max-width: 768px){
     .contact-header {
         font-size: 4.8rem;
     }   
-    .content {
-        width: 540px;
-    }
 }
 
 @media only screen and (max-width: 580px){
-    .brand-text {
-        font-size: 1.4rem;
-        margin-left: 60px;
-    }
     .logo {
         width: 3rem;
     }
@@ -213,8 +190,7 @@ body {
         font-size: 3rem;
     }
     .content {
-        width: 90vw;
-        top: 60%;
+        margin-top: 6vh;
     }
     .contact-form {
         width: 86vw;
@@ -235,11 +211,28 @@ body {
     .logo {
         width: 3rem;
     }
+    .member-cta {
+        font-size: 0.8rem;
+    }
+    .member-link {
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .content {
-        margin-top: -0px;
+        margin-top: 6vh;
+    }
+    @media only screen and (max-height: 700px){
+        .contact-form {
+            height: 65vh;
+        }
+        .content {
+            margin-top: 0vh;
+        }
+        .contact-header {
+            font-size: 2.6rem;
+        }
     }
     body {
         height: 0px;

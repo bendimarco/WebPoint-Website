@@ -1,7 +1,8 @@
 body {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%);;
+    background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%);
+    /* background: linear-gradient(to top right, #0b5796 0%, #2f009c 100%); */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -13,22 +14,20 @@ body {
     margin-right: 40px;
 }
 
-.brand-text {
-    margin-top: 20px;
+#nav-brand {
     font-size: 2rem;
-    color: #fff;
 }
-
 .logo {
     width: 4rem;
 }
 
 .main-container {
-    height: 66vh;
+    height: 600px;
 }
 
 .main-text-container {
     width: 40vw;
+    margin-left: 10vw;
 }
 
 .main-img-container {
@@ -38,8 +37,21 @@ body {
 .why-container {
     height: 600px;
     background: #fff;
+    width: 100vw;
 }
 
 .about-img {
     width: 20rem;
+}
+
+.about-header {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.4rem;
+    font-weight: 300;
 }
