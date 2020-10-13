@@ -37,25 +37,26 @@
         <div class="rel">
             <div class="content">
                 <h1 class="contact-header">Get in Touch.</h1>
-                <div class="contact-form">
+                <form onsubmit="submit()" class="contact-form" id="form">
                     <!-- add to form:  action="mailto:someone@example.com" method="post" enctype="text/plain" -->
                     <div class="input-field">
-                        <input autocomplete="name" class="input" type="text" id="name-input" required>
+                        <input autocomplete="name" class="input" type="text" id="name-input" name="name-input" required>
                         <span class="input-span">Full Name</span>
                     </div>
                     <div class="input-field">
-                        <input autocomplete="email" class="input" type="text" id="email-input" required>
+                        <input autocomplete="email" class="input" type="text" id="email-input" name="email-input" required>
                         <span class="input-span">Email Adress</span>
                     </div>
                     <div class="input-field">
-                        <textarea class="message-box" id="" cols="30" rows="10" required></textarea>
+                        <textarea form="form" name="message-input" nameclass="message-box" id="" cols="30" rows="10" required></textarea>
                         <span class="input-span msg-span">Message</span>
                     </input>
                     </div>
                     <div class="input-field submit">
-                        <input onclick="submit()" class="submit-button" type="submit" value="Send Message" required>
+                        <input class="submit-button" type="submit" value="Send Message" required>
                     </div>
-                </div>
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
                 <h3 class="member-cta">Interested in becoming a member? &nbsp;<a target="_blank" class="member-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfpEhTwU_GgRbQ8mLXI35mcLPkKMDVboVUUGYSnli0a_19ypg/viewform">Click Here</a></h3>
             </div>
         </div>
