@@ -5,7 +5,8 @@ function getValue(elements, name) {
     return encodeURIComponent(elements[name].value);
 }
 
-function submit() {
+function submit(e) {
+    e.preventDefault();
     let elements = form.elements;
     fetch(`https://formsubmit.co/webpointexecutives@gmail.com?name=${getValue(elements, "name-input")}&email=${getValue(elements, "email-input")}&message=${getValue(elements, "message-input")}`, {method: "POST"})
     .then(response => {
