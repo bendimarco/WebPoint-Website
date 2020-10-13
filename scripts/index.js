@@ -1,9 +1,12 @@
+let form = document.querySelector("form");
+form.addEventListener("submit", submit);
+
 function getValue(elements, name) {
-    return encodeURIComponent(elements[name].value)
+    return encodeURIComponent(elements[name].value);
 }
 
 function submit() {
-    let elements = document.querySelector("form").elements;
+    let elements = form.elements;
     fetch(`https://formsubmit.co/webpointexecutives@gmail.com?name=${getValue(elements, "name-input")}&email=${getValue(elements, "email-input")}&message=${getValue(elements, "message-input")}`, {method: "POST"})
     .then(response => {
         if (!response.ok) {
