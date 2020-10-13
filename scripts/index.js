@@ -28,4 +28,5 @@ function submit(e) {
             button: "Try again!",
         });
     });
+    return false;
 }
