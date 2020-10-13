@@ -8,7 +8,7 @@ function getValue(elements, name) {
 function submit(e) {
     e.preventDefault();
     let elements = form.elements;
-    fetch(`https://formsubmit.co/webpointexecutives@gmail.com?name=${getValue(elements, "name-input")}&email=${getValue(elements, "email-input")}&message=${getValue(elements, "message-input")}`, {method: "POST"})
+    fetch(`https://formsubmit.co/webpointexecutives@gmail.com?name=${getValue(elements, "name-input")}&email=${getValue(elements, "email-input")}&message=${getValue(elements, "message-input")}`, {method: "POST", mode: "no-cors"})
     .then(response => {
         if (!response.ok) {
             throw new Error();
