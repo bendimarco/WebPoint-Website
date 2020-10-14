@@ -2,13 +2,21 @@ let form = document.querySelector("form");
 form.addEventListener("submit", submit);
 
 function getValue(elements, name) {
-    return encodeURIComponent(elements[name].value);
+    return elements[name].value;
+}
+
+function getFormJSON() {
+    let elements = form.elements;
+    return JSON.stringify({
+        name: getValue(elements, "name-input"), 
+        email: getValue(elements, "email-input"), 
+        message: getValue(elements, "message-input")
+    });
 }
 
 function submit(e) {
     e.preventDefault();
-    let elements = form.elements;
-    fetch(`https://formsubmit.co/webpointexecutives@gmail.com?_captcha=false&name=${getValue(elements, "name-input")}&email=${getValue(elements, "email-input")}&message=${getValue(elements, "message-input")}`, {method: "POST", mode: "no-cors"})
+    fetch("https://cors-anywhere.herokuapp.com/https://formsubmit.co/ajax/webpointexecutives@gmail.com", {method: "POST", headers: {"Content-Type": "application/json"}, body: getFormJSON()})
     .then(response => {
         if (!response.ok) {
             throw new Error();
