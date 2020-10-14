@@ -16,8 +16,14 @@ function getFormJSON() {
 
 function submit(e) {
     e.preventDefault();
+    swal({
+        title: "Success!",
+        text: "Your message has been sent.",
+        icon: "success",
+        button: "Awesome!",
+    });
     fetch("https://cors-anywhere.herokuapp.com/https://formsubmit.co/ajax/webpointexecutives@gmail.com", {method: "POST", headers: {"Content-Type": "application/json"}, body: getFormJSON()})
-    .then(response => {
+    ;/*.then(response => {
         if (!response.ok) {
             throw new Error();
         } else {
@@ -35,6 +41,6 @@ function submit(e) {
             icon: "error",
             button: "Try again!",
         });
-    });
+    });*/
     return false;
 }
