@@ -1,6 +1,4 @@
 body {
-    height: 100vh;
-    width: 100vw;
     /* background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%); */
     /* background: linear-gradient(to top right, #0b5796 0%, #2f009c 100%); */
     font-family: 'Montserrat', sans-serif;
@@ -35,15 +33,14 @@ body {
 }
 
 .container {
-    width: 90vw;
     max-width: 1400px;
     /* background: #f00; */
 }
 
 .why-container {
-    height: 500px;
-    background: rgb(0, 0, 0);
-    width: 100vw;
+    height: 570px;
+    background: rgb(24, 24, 24);
+    width: 100%;
 }
 
 .about-img {
@@ -74,16 +71,213 @@ body {
 .why-header {
     font-size: 3.6rem;
     font-weight: 700;
-    color: rgb(199, 199, 199);
+    color: rgb(54, 54, 54);
     padding-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .why-box {
     text-align: center;
 }
 
+.feature-title {
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.feature-text {
+    color: rgb(129, 129, 129);
+    font-size: 1.1rem;
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 1.4;
+}
+
 .icon {
     color: #6090FF;
     font-size: 5rem;
-    text-shadow: 0px 0px 6px rgba(147, 221, 255, 0.6);
+    /* text-shadow: 0px 0px 6px rgba(147, 221, 255, 0.6); */
+}
+
+.icon:hover {
+    color: #4b5dff;
+    transition: 0.4s;
+}
+
+.team-button {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.247);
+    font-size: 0/9rem;
+    letter-spacing: 0.05rem;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    margin-top: 60px;
+    padding: 0.5rem 1.2rem;
+    background: rgb(26, 26, 26);
+    transition: 0.26s ease-in-out;
+}
+
+.team-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 6px 6px rgba(192, 192, 192, 0.068);
+    background: rgb(12, 12, 12);
+}
+
+/* .team-button:hover .arrow {
+    color: #6090FF;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+} */
+
+.team-btn-container {
+    /* background: #f00; */
+    text-align: center;
+}
+
+@media only screen and (max-width: 1600px){
+    .main-text-container {
+        padding-left: 50px;
+    }
+    .about-text {
+        font-size: 1.2rem;
+    }
+    .about-img {
+        margin-top: 180px;
+        width: 28rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    .main-text-container {
+        /* background: #f00; */
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .main-img-container {
+        background: #0f0;
+    }
+    .about-img {
+        width: 34rem;
+        float: left;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-container {
+        height: auto;
+        text-align:center;
+    }
+    .why-header {
+        padding-top: 40px;
+        font-size: 3.2rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .feature-text {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .why-container {
+        height: auto;
+    }
+    .team-button {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        font-size: 1.2rem;
+    }
+    .why-box{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 996px){
+    .feature-text {
+        margin-left: 26vw;
+        margin-right: 26vw;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .feature-text {
+        margin-left: 16vw;
+        margin-right: 16vw;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .feature-text {
+    }
+    .about-img {
+        width: 24rem;
+    }
+    .about-header {
+        font-size: 3.2rem;
+    }
+    .about-text {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .abt-txt-3 {
+        font-weight: 500;
+    }
+    .why-header {
+        font-size: 2.7rem;
+    }
+    #nav-brand {
+        font-size: 1.4rem;
+    }
+    .logo {
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .about-img {
+        width: 18rem;
+    }
+    .about-header {
+        font-size: 2.8rem;
+    }
+    .about-text {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .main-text-container {
+        /* background: #f00; */
+        width: 92%;
+        margin-left: 45%;
+        transform: translateX(-50%);
+    }
+    .abt-txt-3 {
+        font-weight: 500;
+    }
+    .why-header {
+        font-size: 2.4rem;
+    }
+    .feature-text {
+        margin-left: 12vw;
+        margin-right: 12vw;
+        font-size: 0.9rem;
+    }
+    .why-box{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .why-header {
+        font-size: 2.1rem;
+    }
+    .main-text-container {
+        width: 98%;
+        margin-left: 43%;
+        transform: translateX(-50%);
+    }
 }
