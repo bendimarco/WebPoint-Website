@@ -121,8 +121,8 @@ body {
 .team-button:hover {
     background-position: 50%;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 6px 6px rgba(192, 192, 192, 0.068);
+    border: 1px solid rgb(223, 182, 182);
+    box-shadow: 6px rgba(192, 192, 192, 0.068);
     background: rgb(12, 12, 12);
 }
 
@@ -239,6 +239,16 @@ body {
 }
 
 @media only screen and (max-width: 475px){
+    .brand-text {
+        font-size: 1rem;
+        margin-left: 60px;
+    }
+    #nav-brand {
+        font-size: 1.4rem;
+    }
+    .logo {
+        width: 2.6rem;
+    }
     .about-img {
         width: 18rem;
     }

@@ -245,8 +245,15 @@ body {
 }
 
 @media only screen and (max-width: 450px){
+    .brand-text {
+        font-size: 1rem;
+        margin-left: 60px;
+    }
+    #nav-brand {
+        font-size: 1.4rem;
+    }
     .logo {
-        width: 3rem;
+        width: 2.6rem;
     }
     .slide-header {
         font-weight: 700;
