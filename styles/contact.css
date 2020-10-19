@@ -282,6 +282,12 @@ body {
         .contact-header {
             font-size: 2.6rem;
         }
+        .submit-button {
+            padding: 8px 20px;
+        }
+        .submit {
+            margin-top: -10px;
+        }
     }
     body {
         height: 0px;

@@ -305,6 +305,9 @@ body {
         .igyb-button, .clsc-button, .sisc-button, .contact-button {
             margin-top: 10px;
         }
+        .Slide-Container {
+            margin-top: -20px;
+        }
     }
     @media only screen and (max-height: 700px){
         .slide-img {
