@@ -4,10 +4,10 @@ body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to top right, #33ccff 0%, #3f14ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
 }
-
-
 
 #nav {
     font-size: 1.4rem;
@@ -158,6 +158,15 @@ body {
 }
 
 @media only screen and (max-width: 960px){
+    @media only screen and (min-height: 600px){
+        .home-heading {
+            font-size: 3rem;
+        }
+        .learn-button {
+            margin-bottom: 60px;
+        }
+        
+    }
     .home-heading {
         font-size: 3rem;
     }
