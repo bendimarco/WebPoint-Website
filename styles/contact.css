@@ -168,7 +168,7 @@ body {
     transition: 0.2s;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1540px){
     @media only screen and (max-height: 800px){
         .contact-header {
             font-size: 5rem;
@@ -216,7 +216,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 998px){
+@media only screen and (max-width: 1540px){
     .contact-header {
         font-size: 6rem;
     }
@@ -282,58 +282,18 @@ body {
         .contact-header {
             font-size: 2.6rem;
         }
-        .submit-button {
-            padding: 8px 20px;
-        }
-        .submit {
-            margin-top: -10px;
-        }
     }
     body {
         height: 0px;
     }
 }
 
-@media only screen and (max-width: 325px){
+@media only screen and (max-width: 100px){
     .brand-text {
         font-size: 1.3rem;
         margin-left: 46px;
     }
     .logo {
         width: 2.6rem;
-    }
-    .contact-form {
-        height: 62vh;
-    }
-    .contact-form {
-        font-size: 1.5rem;
-    }
-    .submit-button {
-        font-size: 1rem;
-        padding: 10px 18px;
-        border-radius: 4px;
-        
-    }
-    .submit {
-        margin-top: -16px;
-    }
-    .message-box {
-        height: 80px;
-    }
-}
-
-@media only screen and (max-width: 300px){
-    .contact-header {
-        font-size: 2rem;
-        margin-top: 20px;
-    }
-    .member-cta {
-        font-size: 0.6rem;
-    }
-    .submit {
-        margin-top: 0px;
-    }
-    .member-link {
-        font-size: 0.6rem;
     }
 }

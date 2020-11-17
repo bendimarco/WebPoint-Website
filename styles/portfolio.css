@@ -156,8 +156,13 @@ body {
     font-weight: 700;
     font-size: 3.4rem;
 }
+@media only screen and (max-height: 800px){
+    .slide-img {
+        width: 18rem;
+    }
+}
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1200px){
     @media only screen and (max-height: 900px) {
         .igyb-img-sect {
             margin-top: 8vh;
@@ -165,9 +170,6 @@ body {
         }
         .Slide-Container {
             margin-top: -30px;
-        }
-        .slide-img {
-            width: 18rem;
         }
     }
 }
@@ -239,11 +241,7 @@ body {
 }
 
 @media only screen and (max-width: 768px){
-    @media only screen and (min-height: 545px){
-        .slide-img {
-            width: 12rem;
-        }
-    }
+
 }
 
 @media only screen and (max-width: 450px){
@@ -305,9 +303,6 @@ body {
         .igyb-button, .clsc-button, .sisc-button, .contact-button {
             margin-top: 10px;
         }
-        .Slide-Container {
-            margin-top: -20px;
-        }
     }
     @media only screen and (max-height: 700px){
         .slide-img {
@@ -316,6 +311,14 @@ body {
     }
 }
 
+@media only screen and (max-width: 330px){
+    .slide-img {
+        width: 14rem;
+        float: none;
+        margin: 0;
+        margin-top: 2vh;
+    }
+}
 
 @media only screen and (max-width: 330px){
     #nav-brand {
@@ -329,15 +332,6 @@ body {
     }
     .slide-desc {
         font-size: 0.7rem;
-    }
-    .slide-img {
-        width: 9rem;
-        float: none;
-        margin: 0;
-        margin-top: 2vh;
-    }
-    .contact-header {
-        font-size: 1.6rem;
     }
 }
 
