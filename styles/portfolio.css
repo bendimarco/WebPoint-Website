@@ -73,7 +73,7 @@ body {
     margin-right: 8rem;
 }
 
-.igyb-button, .clsc-button, .sisc-button, .contact-button {
+.igyb-button, .clsc-button, .sisc-button, .ps-button, .contact-button {
     cursor: pointer;
     color: rgba(51, 51, 51, 0.6);
     font-size: 1.2rem;
@@ -110,6 +110,15 @@ body {
     transition-property: background-position, color, border;
 }
 
+.ps-button {
+    margin-left: 40px;
+    background: url("../images/ps-button-bg.svg");
+    background-position: 260%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    transition-property: background-position, color, border;
+}
+
 .contact-button {
     background: url("../images/contact-button-bg.svg");
     background-position: 260%;
@@ -138,6 +147,12 @@ body {
     border: 2px solid #2951D9;
 }
 
+.ps-button:hover {
+    background-position: 50%;
+    color: #fff;
+    border: 2px solid #ff3636;
+}
+
 .contact-button:hover {
     background-position: 50%;
     color: #fff;
@@ -156,13 +171,8 @@ body {
     font-weight: 700;
     font-size: 3.4rem;
 }
-@media only screen and (max-height: 800px){
-    .slide-img {
-        width: 18rem;
-    }
-}
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 600px){
     @media only screen and (max-height: 900px) {
         .igyb-img-sect {
             margin-top: 8vh;
@@ -170,6 +180,9 @@ body {
         }
         .Slide-Container {
             margin-top: -30px;
+        }
+        .slide-img {
+            width: 18rem;
         }
     }
 }
@@ -235,13 +248,17 @@ body {
         margin: 0;
         margin-top: 2vh;
     }
-    .igyb-button, .clsc-button, .sisc-button, .contact-button {
+    .igyb-button, .clsc-button, .sisc-button, .ps-button, .contact-button {
         margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 768px){
-
+    @media only screen and (min-height: 545px){
+        .slide-img {
+            width: 12rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -300,8 +317,11 @@ body {
             width: 12rem;
             margin-top: 6vh;
         }
-        .igyb-button, .clsc-button, .sisc-button, .contact-button {
+        .igyb-button, .clsc-button, .sisc-button, .ps-button, .contact-button {
             margin-top: 10px;
+        }
+        .Slide-Container {
+            margin-top: -20px;
         }
     }
     @media only screen and (max-height: 700px){
@@ -311,14 +331,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 330px){
-    .slide-img {
-        width: 14rem;
-        float: none;
-        margin: 0;
-        margin-top: 2vh;
-    }
-}
 
 @media only screen and (max-width: 330px){
     #nav-brand {
@@ -332,6 +344,15 @@ body {
     }
     .slide-desc {
         font-size: 0.7rem;
+    }
+    .slide-img {
+        width: 9rem;
+        float: none;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .contact-header {
+        font-size: 1.6rem;
     }
 }
 
